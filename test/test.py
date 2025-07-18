@@ -34,7 +34,7 @@ async def test_project(dut):
 
     dut.rst_n.value = 1
 
-    await RisingEdge(clk)
+    await RisingEdge(dut.clk)
 
     dut.ui_in[0].value = 0 # x1=0
     dut.ui_in[0].value = 1 # x1=1
