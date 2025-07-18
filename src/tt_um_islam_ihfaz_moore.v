@@ -21,7 +21,7 @@ module tt_um_islam_ihfaz_moore (
     // output
     wire z1;
     reg [1:3] y;
-    reg next_state;
+    reg [1:3] next_state;
 
     parameter state_a=3'b000,
               state_b=3'b010,
@@ -84,6 +84,6 @@ module tt_um_islam_ihfaz_moore (
     assign uio_oe  = 0;
 
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, ui_in[7:4], uio_in, 1'b0};
+    wire _unused = &{ena, ui_in[7:1], uio_in, 1'b0};
 
 endmodule
