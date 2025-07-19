@@ -35,24 +35,40 @@ async def test_project(dut):
     dut.rst_n.value = 1
 
     await RisingEdge(dut.clk)
-
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 1 # x1=1
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 1 # x1=1
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 1 # x1=1
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 1 # x1=1
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 1 # x1=1
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 1 # x1=1
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 1 # x1=1
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 1 # x1=1
+    await RisingEdge(dut.clk)
     dut.ui_in[0].value = 0 # x1=0
+    await RisingEdge(dut.clk)
 
     await ClockCycles(dut.clk, 10)
 
